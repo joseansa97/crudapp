@@ -1,6 +1,6 @@
 <?php
 
-    // DB credentials.
+    // Conexion a la base de datos
 	define('DB_HOST','localhost');
 	define('DB_USER','root');
 	define('DB_PASS','');
@@ -14,4 +14,5 @@
     if (@mysqli_connect_errno()) {
         die("Conexión falló: ".mysqli_connect_errno()." : ". mysqli_connect_error());
     }
+
 ?>

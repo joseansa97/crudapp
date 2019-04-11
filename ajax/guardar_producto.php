@@ -4,7 +4,6 @@
 	} elseif (!empty($_POST['name'])){
 	require_once ("../conexion.php");
 	
-	// escaping, additionally removing everything that could be (html/javascript-) code
     $prod_code = mysqli_real_escape_string($con,(strip_tags($_POST["code"],ENT_QUOTES)));
 	$prod_name = mysqli_real_escape_string($con,(strip_tags($_POST["name"],ENT_QUOTES)));
 	$prod_ctry = mysqli_real_escape_string($con,(strip_tags($_POST["category"],ENT_QUOTES)));

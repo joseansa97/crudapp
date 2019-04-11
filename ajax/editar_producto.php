@@ -2,9 +2,8 @@
 	if (empty($_POST['edit_id'])){
 		$errors[] = "ID está vacío.";
 	} elseif (!empty($_POST['edit_id'])){
-	require_once ("../conexion.php"); //Contiene funcion que conecta a la base de datos
+	require_once ("../conexion.php");
 
-	// escaping, additionally removing everything that could be (html/javascript-) code
     $prod_code = mysqli_real_escape_string($con,(strip_tags($_POST["edit_code"],ENT_QUOTES)));
 	$prod_name = mysqli_real_escape_string($con,(strip_tags($_POST["edit_name"],ENT_QUOTES)));
 	$prod_ctry = mysqli_real_escape_string($con,(strip_tags($_POST["edit_category"],ENT_QUOTES)));

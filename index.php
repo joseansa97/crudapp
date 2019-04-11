@@ -48,6 +48,7 @@
 			
         </div>
     </div>
+
 	<!-- Edit Modal HTML -->
 	<?php include("html/modal_add.php");?>
 	<!-- Edit Modal HTML -->
@@ -55,5 +56,6 @@
 	<!-- Delete Modal HTML -->
 	<?php include("html/modal_delete.php");?>
 	<script src="js/script.js"></script>
+	
 </body>
 </html>                                		                            
